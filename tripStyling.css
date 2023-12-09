@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI    ", Rob3oto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.image-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  /* position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0.1; */
+}
+
+.image-container a {
+  flex: 1;
+  text-decoration: none;
+  filter: opacity(85%);
+  transition: filter 0.4s ease;
+
+}
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.overlay {
+  position: absolute;
+  top: 45%;
+  left: 27%;
+  font-weight: bold;
+  color: white;
+  font-size: 100px;
+  z-index: 2;
+}
+
+.image-container a:hover {
+filter: contrast(1.4);
+filter: opacity(1);
+}
+
+
+/* ************************************************************************************************************************************************************************ */
+/* Starting of the top banner that includes search destination and other things */
+/* ************************************************************************************************************************************************************************ */
+
+.first-banner {
+  padding: 50px 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: large;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 89vw;
+}
+
+.first-banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.first-banner input {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  color: white;
+}
+.first-banner img {
+  width: 50px;
+  height: auto;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+}
+.search input {
+  transition: width 0.5s ease;
+}
+.search input:focus {
+  background-color: white;
+  outline: none;
+  width: 8cm;
+  color: black;
+  font-size: medium;
+  border-radius: 20px;
+  padding-left: 5%;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 35px;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* ************************************************************************************************************************************************************************ */
+/* Starting of the caption */
+/* ************************************************************************************************************************************************************************ */
+
+.first-caption {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.first-caption .sub-title {
+  font-size: 15px;
+  color: grey;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.first-caption .title {
+  font-family: mt;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 70px;
+}
+
+.first-caption .content {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* ************************************************************************************************************************************************************************ */
+/* Starting of paralax effect */
+/* ************************************************************************************************************************************************************************ */
+
+.bg-image1,
+.bg-image2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-image1 {
+  background-image: url("temple.jpg");
+  min-height: 700px;
+
+}
+
+/* ************************************************************************************************************************************************************************ */
+/* Starting  caption after the first parallax effect */
+/* ************************************************************************************************************************************************************************ */
+.second-body {
+  padding-top: 50px;
+  padding: 50px 50px;
+}
+.second-body .title {
+  margin-top: 50px;
+  font-family: mk;
+  font-weight: bold;
+  font-size: larger;
+  font-size: 45px;
+  margin-bottom: 25px;
+  width: 90%;
+}
+.second-body .content {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 30px;
+}
+.second-body img {
+  width: 500px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.flexbody1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 7%;
+}
+
+
+/* ************************************************************************************************************************************************************************ */
+/* Starting  caption after the first parallax effect */
+/* ************************************************************************************************************************************************************************ */
+.bg-image1 p{
+  position: absolute;
+  top: 50%;
+}
+
