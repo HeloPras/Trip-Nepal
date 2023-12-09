@@ -101,6 +101,11 @@ filter: opacity(1);
   font-weight: bold;
 }
 
+.links  a:hover{
+  opacity: 70%;
+  transition: 0.5sec ease;
+}
+
 ::placeholder {
   color: white;
   font-size: large;
