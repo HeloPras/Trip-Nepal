@@ -1,4 +1,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
   *{
     margin: 0;
@@ -80,11 +84,15 @@ filter: opacity(1);
   height: auto;
 }
 .search {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
+
 .search input {
+
   transition: width 0.4s ease-in-out,background-color 0.4s ease-in-out, border-radius 0.5s ease-out;
+  width: 8cm;
 }
 .search input:focus {
   background-color: white;
@@ -108,6 +116,7 @@ filter: opacity(1);
 }
 
 ::placeholder {
+  font-family: 'DM Serif Display', serif;
   color: white;
   font-size: large;
   font-weight: bold;
@@ -163,10 +172,11 @@ filter: opacity(1);
 .second-body {
   padding-top: 50px;
   padding: 50px 50px;
+  margin-bottom: 50px;
 }
 .second-body .title {
   margin-top: 50px;
-  font-family: mk;
+  font-family: 'PT Serif', serif;
   font-weight: bold;
   font-size: larger;
   font-size: 45px;
@@ -174,6 +184,7 @@ filter: opacity(1);
   width: 90%;
 }
 .second-body .content {
+  font-family: 'PT Serif', serif;
   margin-top: 25px;
   font-size: 20px;
   font-weight: 50;
@@ -192,11 +203,54 @@ filter: opacity(1);
 }
 
 
+
 /* ************************************************************************************************************************************************************************ */
-/* Starting  caption after the first parallax effect */
+/* Video background */
 /* ************************************************************************************************************************************************************************ */
-.bg-image1 p{
-  position: absolute;
-  top: 50%;
+
+
+.video_background{
+  height:105vh;
+  color: white;
+  position: relative;
+  margin-bottom: 50px;
 }
+
+.video_background::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(95, 92, 75, 0.8);
+  z-index: -1;
+
+}
+
+.nepal_video h1{
+  /* font-family: 'Bebas Neue', sans-serif; */
+  font-family: 'Lobster', sans-serif;
+  font-size: 70px;
+ position: absolute;
+ top: 43%;
+ right: 19%;
+}
+
+
+.nepal_video video{
+  position: absolute;
+  top: 0;
+  left: 0; 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+
+  
+} 
+
+
+
+
+
+
+
 
