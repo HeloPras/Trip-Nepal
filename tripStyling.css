@@ -152,6 +152,7 @@ filter: opacity(1);
     display: block;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
     border-radius: 5px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.164);
   }
   .dropdown-content a::after{
     content: url(icon-arrow-right.svg);
@@ -176,7 +177,6 @@ filter: opacity(1);
   padding-left: 21px;
   background-color: rgb(107, 174, 212);
   color: rgba(0, 0, 0, 0.816);
-  border-bottom: 1px inset black;
 
 }
 .dropdown-content a:hover::after{
