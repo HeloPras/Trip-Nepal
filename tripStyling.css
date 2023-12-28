@@ -117,6 +117,7 @@
   color: white;
   font-size: 100px;
   z-index: 2;
+  pointer-events: none;
 }
 
 .image-container a:hover {
