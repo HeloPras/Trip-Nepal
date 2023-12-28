@@ -27,6 +27,7 @@
     gap: 0.7rem;
     z-index: 999;
     opacity: 1;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 .circle{
     height: 1rem;
@@ -70,6 +71,16 @@
   visibility: hidden;
 }
 
+.loaded-content{
+  opacity: 0;
+  transform: translate3d(0, -1rem, 0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.loaded{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
 /* ************************************************************************************************************************************************************************ */
 /* Starting of the body */
 /* ************************************************************************************************************************************************************************ */

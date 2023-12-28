@@ -7,6 +7,15 @@
 <link rel="stylesheet" href="destination.css">
 </head>
 <body>
+    <div class="loading-container">
+        <div class="first circle"></div>
+        <div class="second circle"></div>
+        <div class="third circle"></div>
+        <div class="fourth circle"></div>
+        <div class="fifth circle"></div>
+        </div>
+
+        <div class="loaded-content">
 <div id="hero">
     <div class="first-banner">
         <div class="search">
@@ -122,5 +131,16 @@
                         </figure>
                     
 </ul>
+</div>
 </body>
+<script>
+    let loadingContainer = document.querySelector('.loading-container')
+    let loadedContent = document.querySelector('.loaded-content')
+
+    window.addEventListener('load',()=>{
+      loadingContainer.classList.add('hidden')
+      loadedContent.classList.add('loaded')           
+    })
+
+  </script>
 </html>
