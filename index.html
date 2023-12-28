@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="tripStyling.css" />
   </head>
   <body>
+
+    <div class="loading-container">
+      <div class="first circle"></div>
+      <div class="second circle"></div>
+      <div class="third circle"></div>
+      <div class="fourth circle"></div>
+      <div class="fifth circle"></div>
+      </div>
+
+      <div class="loaded-content">
     <div class="first-banner">
       <div class="search">
         <label for="search">
@@ -88,7 +98,16 @@
 
 </section>
 
-
+</div>
   </body>
-  
+  <script>
+    let loadingContainer = document.querySelector('.loading-container')
+    let loadedContent = document.querySelector('.loadedContent')
+
+    window.addEventListener('load',()=>{
+      loadingContainer.classList.add('hidden')
+      loadedContent.classList.add('loaded')           
+    })
+    
+  </script>
 </html>

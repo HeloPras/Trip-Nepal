@@ -7,7 +7,72 @@
   *{
     margin: 0;
   }
-  
+
+
+/* ************************************************************************************************************************************************************************ */
+/* Starting of the the loading container */
+/* ************************************************************************************************************************************************************************ */
+
+  html{
+    size: 16px;
+}
+
+.loading-container{
+  background-color: rgb(241, 233, 219);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    z-index: 999;
+    opacity: 1;
+}
+.circle{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+
+.first{
+    background-color: red;
+    animation: 0.8s ease-in-out infinite alternate loading;
+}
+
+.second{
+    background-color: blue;
+    animation: 0.8s ease-in-out 0.3s infinite alternate loading;
+}
+
+.third{
+    background-color: yellow;
+    animation: 0.8s ease-in-out 0.6s infinite alternate loading;
+}
+
+.fourth{
+    background-color:green ;
+    animation: 0.8s ease-in-out 0.9s infinite alternate loading;
+}
+
+.fifth{
+    background-color:blueviolet;
+    animation: 0.8s ease-in-out 1.2s infinite alternate loading;
+}
+
+
+@keyframes loading{
+    to{transform: translate3d(0, -1rem, 0);}
+} 
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ************************************************************************************************************************************************************************ */
+/* Starting of the body */
+/* ************************************************************************************************************************************************************************ */
 .image-container {
   display: flex;
   flex-wrap: nowrap;
